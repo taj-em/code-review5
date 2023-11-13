@@ -68,6 +68,12 @@ describe('getYearsUntil', () => {
     let yearsUntil = (yearsUntilTest.getYearsUntil());
     expect(yearsUntil.jupiterAge).toEqual(0.84);
   });
+
+  test('should calculate the years until a selected year on saturn', () => {
+    const yearsUntilTest = new UserInput(40, 50, 30);
+    let yearsUntil = (yearsUntilTest.getYearsUntil());
+    expect(yearsUntil.saturnAge).toEqual(0.34);
+  });
 });
 
 describe('getYearSince', () => {
