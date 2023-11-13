@@ -21,6 +21,7 @@ export class UserInput {
     const earthDays = this.age1 * 365;
     const futureEarthDays = this.age2 * 365;
     let yearsUntil = {};
+    yearsUntil.uranusAge = parseFloat(((futureEarthDays / 30684.65) - (earthDays / 30684.65)).toFixed(2));
     yearsUntil.saturnAge = parseFloat(((futureEarthDays / 10752.9) - (earthDays / 10752.9)).toFixed(2));
     yearsUntil.jupiterAge = parseFloat(((futureEarthDays / 4328.9) - (earthDays / 4328.9)).toFixed(2));
     yearsUntil.mercuryAge = parseFloat(((futureEarthDays / 87.97) - (earthDays / 87.97)).toFixed(2));
