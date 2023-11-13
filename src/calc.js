@@ -31,6 +31,7 @@ export class UserInput {
     const pastEarthDays = this.age3 * 365;
     let yearSince = {};
     yearSince.mercuryAge = Math.round((earthDays / 88) - (pastEarthDays / 88));
+    yearSince.venusAge = Math.round((earthDays / 225) - (pastEarthDays / 225));
     return yearSince;
   }
 }
