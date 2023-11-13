@@ -14,13 +14,13 @@ describe('getCurrentAge', () => {
 
   test('should convert age1 into same age on mercury', () => {
     let currentAgeTest = new UserInput(40, 50);
-    let mercuryAge = (currentAgeTest.getCurrentAge());
-    expect(mercuryAge).toEqual(166);
+    let plantAges = (currentAgeTest.getCurrentAge());
+    expect(plantAges.mercuryAge).toEqual(166);
   });
 
   test('should convert age1 into same age on venus', () => {
     let currentAgeTest = new UserInput(40, 50);
-    let mercuryAge = (currentAgeTest.getCurrentAge());
-    expect(mercuryAge).toEqual(65);
+    let plantAges = (currentAgeTest.getCurrentAge());
+    expect(plantAges.venusAge).toEqual(65);
   });
 });

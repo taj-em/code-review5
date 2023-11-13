@@ -6,8 +6,9 @@ export class UserInput {
   }
   getCurrentAge() {
     const earthDays = this.age1 * 365;
-    let mercuryAge = 0;
-    mercuryAge = Math.round(earthDays / 88);
-    return mercuryAge;
+    let plantAges = {};
+    plantAges.mercuryAge = Math.round(earthDays / 88);
+    plantAges.venusAge = Math.round(earthDays / 255);
+    return plantAges;
   }
 }
