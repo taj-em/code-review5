@@ -8,10 +8,10 @@ export class UserInput {
   getCurrentAge() {
     const earthDays = this.age1 * 365;
     let plantAges = {};
+    plantAges.jupiterAge = Math.round(earthDays / 4329);
     plantAges.mercuryAge = Math.round(earthDays / 88);
     plantAges.venusAge = Math.round(earthDays / 225);
     plantAges.marsAge = Math.round(earthDays / 686);
-    plantAges.jupiterAge = Math.round(earthDays / 4329);
     return plantAges;
   }
 
@@ -21,6 +21,7 @@ export class UserInput {
     let yearsUntil = {};
     yearsUntil.mercuryAge = Math.round((futureEarthDays / 88) - (earthDays / 88));
     yearsUntil.venusAge = Math.round((futureEarthDays / 225) - (earthDays / 225));
+    yearsUntil.marsAge = Math.round((futureEarthDays / 686) - (earthDays / 686));
     return yearsUntil;
   }
 }
