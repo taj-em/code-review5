@@ -29,4 +29,10 @@ describe('getCurrentAge', () => {
     let plantAges = (currentAgeTest.getCurrentAge());
     expect(plantAges.marsAge).toEqual(21);
   });
+
+  test('should convert age1 into same age on jupiter', () => {
+    let currentAgeTest = new UserInput(40, 50);
+    let plantAges = (currentAgeTest.getCurrentAge());
+    expect(plantAges.jupiterAge).toEqual(3);
+  });
 });
