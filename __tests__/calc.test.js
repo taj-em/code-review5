@@ -69,24 +69,24 @@ describe('getYearSince', () => {
   test('should calculate the years since a selected year on mercury', () => {
     const yearSinceTest = new UserInput(40, 50, 30);
     let yearSince = (yearSinceTest.getYearSince());
-    expect(yearSince.mercuryAge).toEqual(41);
+    expect(yearSince.mercuryAge).toEqual(41.49);
   });
 
   test('should calculate the years since a selected year on venus', () => {
     const yearSinceTest = new UserInput(40, 50, 30);
     let yearSince = (yearSinceTest.getYearSince());
-    expect(yearSince.venusAge).toEqual(16);
+    expect(yearSince.venusAge).toEqual(16.24);
   });
 
   test('should calculate the years since a selected year on mars', () => {
     const yearSinceTest = new UserInput(40, 50, 30);
     let yearSince = (yearSinceTest.getYearSince());
-    expect(yearSince.marsAge).toEqual(5);
+    expect(yearSince.marsAge).toEqual(5.32);
   });
 
   test('should calculate the years since a selected year on jupiter', () => {
     const yearSinceTest = new UserInput(40, 50, 30);
     let yearSince = (yearSinceTest.getYearSince());
-    expect(yearSince.jupiterAge).toEqual(1);
+    expect(yearSince.jupiterAge).toEqual(0.84);
   });
 });

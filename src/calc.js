@@ -30,10 +30,10 @@ export class UserInput {
     const earthDays = this.age1 * 365;
     const pastEarthDays = this.age3 * 365;
     let yearSince = {};
-    yearSince.jupiterAge = Math.round((earthDays / 4329) - (pastEarthDays / 4329));
-    yearSince.mercuryAge = Math.round((earthDays / 88) - (pastEarthDays / 88));
-    yearSince.venusAge = Math.round((earthDays / 225) - (pastEarthDays / 225));
-    yearSince.marsAge = Math.round((earthDays / 686) - (pastEarthDays / 686));
+    yearSince.jupiterAge = parseFloat(((earthDays / 4328.9) - (pastEarthDays / 4328.9)).toFixed(2));
+    yearSince.mercuryAge = parseFloat(((earthDays / 87.97) - (pastEarthDays / 87.97)).toFixed(2));
+    yearSince.venusAge = parseFloat(((earthDays / 224.7) - (pastEarthDays / 224.7)).toFixed(2));
+    yearSince.marsAge = parseFloat(((earthDays / 686.2) - (pastEarthDays / 686.2)).toFixed(2));
     return yearSince;
   }
 }
