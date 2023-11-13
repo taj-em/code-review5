@@ -11,7 +11,7 @@ export class UserInput {
     planetAges.jupiterAge = Math.round(earthDays / 4329);
     planetAges.mercuryAge = parseFloat((earthDays / 87.97).toFixed(2));
     planetAges.venusAge = parseFloat((earthDays / 224.7).toFixed(2));
-    planetAges.marsAge = Math.round(earthDays / 686);
+    planetAges.marsAge = parseFloat((earthDays / 686.2).toFixed(2));
     return planetAges;
   }
 
