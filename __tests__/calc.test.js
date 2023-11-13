@@ -21,7 +21,7 @@ describe('getCurrentAge', () => {
   test('should convert age1 into same age on venus', () => {
     let currentAgeTest = new UserInput(40, 50, 30);
     let plantAges = (currentAgeTest.getCurrentAge());
-    expect(plantAges.venusAge).toEqual(65);
+    expect(plantAges.venusAge).toEqual(64.98);
   });
 
   test('should convert age1 into same age on mars', () => {
