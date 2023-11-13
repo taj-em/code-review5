@@ -22,7 +22,7 @@ export class UserInput {
     yearsUntil.jupiterAge = Math.round((futureEarthDays / 4329) - (earthDays / 4329));
     yearsUntil.mercuryAge = parseFloat(((futureEarthDays / 87.97) - (earthDays / 87.97)).toFixed(2));
     yearsUntil.venusAge = parseFloat(((futureEarthDays / 224.7) - (earthDays / 224.7)).toFixed(2));
-    yearsUntil.marsAge = Math.round((futureEarthDays / 686) - (earthDays / 686));
+    yearsUntil.marsAge = parseFloat(((futureEarthDays / 686.2) - (earthDays / 686.2)).toFixed(2));
     return yearsUntil;
   }
 
