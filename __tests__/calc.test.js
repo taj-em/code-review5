@@ -9,3 +9,12 @@ describe('UserInput', () => {
     expect(inputTest.age2).toEqual(50); 
   });
 });
+
+describe('getCurrentAge', () => {
+
+  test('should convert age1 into same age on mercury', () => {
+    let currentAgeTest = new UserInput(40, 50);
+    let mercuryAge = currentAgeTest.getCurrentAge();
+    expect(mercuryAge).toEqual(166.08);
+  });
+});

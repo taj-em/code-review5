@@ -4,4 +4,6 @@ export class UserInput {
     this.age1 = age1;
     this.age2 = age2;
   }
+
+  
 }
