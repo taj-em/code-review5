@@ -8,7 +8,7 @@ export class UserInput {
     const earthDays = this.age1 * 365;
     let plantAges = {};
     plantAges.mercuryAge = Math.round(earthDays / 88);
-    plantAges.venusAge = Math.round(earthDays / 255);
+    plantAges.venusAge = Math.round(earthDays / 225);
     return plantAges;
   }
 }
