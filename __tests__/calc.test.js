@@ -83,4 +83,10 @@ describe('getYearSince', () => {
     let yearSince = (yearSinceTest.getYearSince());
     expect(yearSince.marsAge).toEqual(5);
   });
+
+  test('should calculate the years since a selected year on jupiter', () => {
+    const yearSinceTest = new UserInput(40, 50, 30);
+    let yearSince = (yearSinceTest.getYearSince());
+    expect(yearSince.jupiterAge).toEqual(1);
+  });
 });
