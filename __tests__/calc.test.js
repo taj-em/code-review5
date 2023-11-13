@@ -60,7 +60,7 @@ describe('getYearsUntil', () => {
   test('should calculate the years until a selected year on jupiter', () => {
     const yearsUntilTest = new UserInput(40, 50, 30);
     let yearsUntil = (yearsUntilTest.getYearsUntil());
-    expect(yearsUntil.jupiterAge).toEqual(1);
+    expect(yearsUntil.jupiterAge).toEqual(0.84);
   });
 });
 
