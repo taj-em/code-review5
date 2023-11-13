@@ -7,12 +7,12 @@ export class UserInput {
   }
   getCurrentAge() {
     const earthDays = this.age1 * 365;
-    let plantAges = {};
-    plantAges.jupiterAge = Math.round(earthDays / 4329);
-    plantAges.mercuryAge = Math.round(earthDays / 88);
-    plantAges.venusAge = Math.round(earthDays / 225);
-    plantAges.marsAge = Math.round(earthDays / 686);
-    return plantAges;
+    let planetAges = {};
+    planetAges.jupiterAge = Math.round(earthDays / 4329);
+    planetAges.mercuryAge = earthDays / 87.97;
+    planetAges.venusAge = Math.round(earthDays / 225);
+    planetAges.marsAge = Math.round(earthDays / 686);
+    return planetAges;
   }
 
   getYearsUntil() {
