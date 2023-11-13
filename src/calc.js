@@ -20,6 +20,7 @@ export class UserInput {
     const futureEarthDays = this.age2 * 365;
     let yearsUntil = {};
     yearsUntil.mercuryAge = Math.round((futureEarthDays / 88) - (earthDays / 88));
+    yearsUntil.venusAge = Math.round((futureEarthDays / 225) - (earthDays / 225));
     return yearsUntil;
   }
 }
