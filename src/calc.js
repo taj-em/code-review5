@@ -10,6 +10,7 @@ export class UserInput {
     plantAges.mercuryAge = Math.round(earthDays / 88);
     plantAges.venusAge = Math.round(earthDays / 225);
     plantAges.marsAge = Math.round(earthDays / 686);
+    plantAges.jupiterAge = Math.round(earthDays / 4329);
     return plantAges;
   }
 }
