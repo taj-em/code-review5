@@ -25,4 +25,12 @@ export class UserInput {
     yearsUntil.marsAge = Math.round((futureEarthDays / 686) - (earthDays / 686));
     return yearsUntil;
   }
+
+  getYearSince() {
+    const earthDays = this.age1 * 365;
+    const pastEarthDays = this.age3 * 365;
+    let yearSince = {};
+    yearSince.mercuryAge = Math.round((earthDays / 88) - (pastEarthDays / 88));
+    return yearSince;
+  }
 }
