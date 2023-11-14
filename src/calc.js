@@ -7,6 +7,8 @@ export class UserInput {
   getCurrentAge() {
     if (this.age1 < 0.1) {
       return "Error";
+    } else if (this.age2 < this.age1) {
+      return "Error";
     } else {
       const earthDays = this.age1 * 365;
       let planetAges = {};
