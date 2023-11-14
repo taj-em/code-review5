@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 export class UserInput {
   constructor(age1, age2, age3) {
     this.age1 = age1;
