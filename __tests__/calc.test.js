@@ -24,6 +24,12 @@ describe('getCurrentAge', () => {
     expect(plantAges).toEqual("Error");
   });
 
+  test('should throw an error if age3 is larger than age1', () => {
+    let currentAgeTest = new UserInput(40, 50, 60);
+    let plantAges = (currentAgeTest.getCurrentAge());
+    expect(plantAges).toEqual("Error");
+  });
+
   test('should convert age1 into same age on mercury', () => {
     let currentAgeTest = new UserInput(40, 50, 30);
     let plantAges = (currentAgeTest.getCurrentAge());
