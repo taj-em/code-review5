@@ -47,6 +47,12 @@ describe('getCurrentAge', () => {
     let plantAges = (currentAgeTest.getCurrentAge());
     expect(plantAges.uranusAge).toEqual(0.48);
   });
+
+  test('should convert age1 into same age on neptune', () => {
+    let currentAgeTest = new UserInput(40, 50, 30);
+    let plantAges = (currentAgeTest.getCurrentAge());
+    expect(plantAges.neptuneAge).toEqual(0.24);
+  });
 });
 
 describe('getYearsUntil', () => {
