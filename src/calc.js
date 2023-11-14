@@ -34,6 +34,7 @@ export class UserInput {
     const earthDays = this.age1 * 365;
     const pastEarthDays = this.age3 * 365;
     let yearSince = {};
+    yearSince.uranusAge = parseFloat(((earthDays / 30684.65) - (pastEarthDays / 30684.65)).toFixed(2));
     yearSince.saturnAge = parseFloat(((earthDays / 10752.9) - (pastEarthDays / 10752.9)).toFixed(2));
     yearSince.jupiterAge = parseFloat(((earthDays / 4328.9) - (pastEarthDays / 4328.9)).toFixed(2));
     yearSince.mercuryAge = parseFloat(((earthDays / 87.97) - (pastEarthDays / 87.97)).toFixed(2));
