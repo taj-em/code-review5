@@ -5,17 +5,21 @@ export class UserInput {
     this.age3 = age3;
   }
   getCurrentAge() {
-    const earthDays = this.age1 * 365;
-    let planetAges = {};
-    planetAges.neptuneAge = parseFloat((earthDays / 60189.55).toFixed(2));
-    planetAges.uranusAge = parseFloat((earthDays / 30684.65).toFixed(2));
-    planetAges.saturnAge = parseFloat((earthDays / 10752.9).toFixed(2));
-    planetAges.jupiterAge = parseFloat((earthDays / 4328.9).toFixed(2));
-    planetAges.plutoAge = parseFloat((earthDays / 90797.5).toFixed(2));
-    planetAges.mercuryAge = parseFloat((earthDays / 87.97).toFixed(2));
-    planetAges.venusAge = parseFloat((earthDays / 224.7).toFixed(2));
-    planetAges.marsAge = parseFloat((earthDays / 686.2).toFixed(2));
-    return planetAges;
+    if (this.age1 < 0.1) {
+      return "Error";
+    } else {
+      const earthDays = this.age1 * 365;
+      let planetAges = {};
+      planetAges.neptuneAge = parseFloat((earthDays / 60189.55).toFixed(2));
+      planetAges.uranusAge = parseFloat((earthDays / 30684.65).toFixed(2));
+      planetAges.saturnAge = parseFloat((earthDays / 10752.9).toFixed(2));
+      planetAges.jupiterAge = parseFloat((earthDays / 4328.9).toFixed(2));
+      planetAges.plutoAge = parseFloat((earthDays / 90797.5).toFixed(2));
+      planetAges.mercuryAge = parseFloat((earthDays / 87.97).toFixed(2));
+      planetAges.venusAge = parseFloat((earthDays / 224.7).toFixed(2));
+      planetAges.marsAge = parseFloat((earthDays / 686.2).toFixed(2));
+      return planetAges;
+    }
   }
 
   getYearsUntil() {
