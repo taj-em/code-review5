@@ -105,10 +105,10 @@ describe('getYearsUntil', () => {
     expect(yearsUntil.neptuneAge).toEqual(0.06);
   });
 
-  test('should calculate the years until a selected year on uranus', () => {
+  test('should calculate the years until a selected year on pluto', () => {
     const yearsUntilTest = new UserInput(40, 50, 30);
     let yearsUntil = (yearsUntilTest.getYearsUntil());
-    expect(yearsUntil.uranusAge).toEqual(0.04);
+    expect(yearsUntil.plutoAge).toEqual(0.04);
   });
 });
 
