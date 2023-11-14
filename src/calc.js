@@ -8,6 +8,7 @@ export class UserInput {
   getCurrentAge() {
     const earthDays = this.age1 * 365;
     let planetAges = {};
+    planetAges.neptuneAge = parseFloat((earthDays / 60189.55).toFixed(2));
     planetAges.uranusAge = parseFloat((earthDays / 30684.65).toFixed(2));
     planetAges.saturnAge = parseFloat((earthDays / 10752.9).toFixed(2));
     planetAges.jupiterAge = parseFloat((earthDays / 4328.9).toFixed(2));
