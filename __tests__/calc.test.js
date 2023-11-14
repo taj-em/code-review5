@@ -69,6 +69,12 @@ describe('getCurrentAge', () => {
 
 describe('getYearsUntil', () => {
 
+  test('should throw an error if age1 is less than 0.1', () => {
+    let yearsUntilTest = new UserInput(0, 50, 30);
+    let yearsUntil = (yearsUntilTest.getYearsUntil());
+    expect(yearsUntil).toEqual("Error");
+  });
+
   test('should calculate the years until a selected year on mercury', () => {
     const yearsUntilTest = new UserInput(40, 50, 30);
     let yearsUntil = (yearsUntilTest.getYearsUntil());
