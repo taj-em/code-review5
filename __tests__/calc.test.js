@@ -137,4 +137,10 @@ describe('getYearSince', () => {
     let yearSince = (yearSinceTest.getYearSince());
     expect(yearSince.uranusAge).toEqual(0.12);
   });
+
+  test('should calculate the years since a selected year on neptune', () => {
+    const yearSinceTest = new UserInput(40, 50, 30);
+    let yearSince = (yearSinceTest.getYearSince());
+    expect(yearSince.neptuneAge).toEqual(0.06);
+  });
 });
