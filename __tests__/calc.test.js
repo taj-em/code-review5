@@ -96,7 +96,7 @@ describe('getYearsUntil', () => {
   test('should calculate the years until a selected year on neptune', () => {
     const yearsUntilTest = new UserInput(40, 50, 30);
     let yearsUntil = (yearsUntilTest.getYearsUntil());
-    expect(yearsUntil.neptuneAge).toEqual(0.3);
+    expect(yearsUntil.neptuneAge).toEqual(0.06);
   });
 });
 
