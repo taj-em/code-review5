@@ -126,6 +126,12 @@ describe('getYearsUntil', () => {
 
 describe('getYearSince', () => {
 
+  test('should throw an error if age1 is less than 0.1', () => {
+    let yearSinceTest = new UserInput(0, 50, 30);
+    let yearSince = (yearSinceTest.getYearSince());
+    expect(yearSince).toEqual("Error");
+  });
+
   test('should calculate the years since a selected year on mercury', () => {
     const yearSinceTest = new UserInput(40, 50, 30);
     let yearSince = (yearSinceTest.getYearSince());
