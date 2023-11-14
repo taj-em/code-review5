@@ -12,6 +12,12 @@ describe('UserInput', () => {
 
 describe('getCurrentAge', () => {
 
+  test('should throw an error if age1 is less than 0.1', () => {
+    let currentAgeTest = new UserInput(0, 50, 30);
+    let plantAges = (currentAgeTest.getCurrentAge());
+    expect(plantAges).toEqual("Error");
+  });
+
   test('should convert age1 into same age on mercury', () => {
     let currentAgeTest = new UserInput(40, 50, 30);
     let plantAges = (currentAgeTest.getCurrentAge());
