@@ -54,6 +54,8 @@ export class UserInput {
       return "Error";
     } else if (this.age2 < this.age1) {
       return "Error";
+    } else if (this.age3 > this.age1) {
+      return "Error";
     } else {
       const earthDays = this.age1 * 365;
       const pastEarthDays = this.age3 * 365;
