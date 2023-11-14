@@ -93,6 +93,12 @@ describe('getYearsUntil', () => {
     expect(yearsUntil).toEqual("Error");
   });
 
+  test('should throw an error if age3 is larger than age1', () => {
+    let yearsUntilTest = new UserInput(40, 50, 60);
+    let yearsUntil = (yearsUntilTest.getCurrentAge());
+    expect(yearsUntil).toEqual("Error");
+  });
+
   test('should calculate the years until a selected year on mercury', () => {
     const yearsUntilTest = new UserInput(40, 50, 30);
     let yearsUntil = (yearsUntilTest.getYearsUntil());
