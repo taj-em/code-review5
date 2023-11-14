@@ -40,19 +40,23 @@ export class UserInput {
       return yearsUntil;
     }
   }
-  
+
   getYearSince() {
-    const earthDays = this.age1 * 365;
-    const pastEarthDays = this.age3 * 365;
-    let yearSince = {};
-    yearSince.neptuneAge = parseFloat(((earthDays / 60189.55) - (pastEarthDays / 60189.55)).toFixed(2));
-    yearSince.uranusAge = parseFloat(((earthDays / 30684.65) - (pastEarthDays / 30684.65)).toFixed(2));
-    yearSince.saturnAge = parseFloat(((earthDays / 10752.9) - (pastEarthDays / 10752.9)).toFixed(2));
-    yearSince.jupiterAge = parseFloat(((earthDays / 4328.9) - (pastEarthDays / 4328.9)).toFixed(2));
-    yearSince.plutoAge = parseFloat(((earthDays / 90797.5) - (pastEarthDays / 90797.5)).toFixed(2));
-    yearSince.mercuryAge = parseFloat(((earthDays / 87.97) - (pastEarthDays / 87.97)).toFixed(2));
-    yearSince.venusAge = parseFloat(((earthDays / 224.7) - (pastEarthDays / 224.7)).toFixed(2));
-    yearSince.marsAge = parseFloat(((earthDays / 686.2) - (pastEarthDays / 686.2)).toFixed(2));
-    return yearSince;
+    if (this.age1 < 0.1) {
+      return "Error";
+    } else {
+      const earthDays = this.age1 * 365;
+      const pastEarthDays = this.age3 * 365;
+      let yearSince = {};
+      yearSince.neptuneAge = parseFloat(((earthDays / 60189.55) - (pastEarthDays / 60189.55)).toFixed(2));
+      yearSince.uranusAge = parseFloat(((earthDays / 30684.65) - (pastEarthDays / 30684.65)).toFixed(2));
+      yearSince.saturnAge = parseFloat(((earthDays / 10752.9) - (pastEarthDays / 10752.9)).toFixed(2));
+      yearSince.jupiterAge = parseFloat(((earthDays / 4328.9) - (pastEarthDays / 4328.9)).toFixed(2));
+      yearSince.plutoAge = parseFloat(((earthDays / 90797.5) - (pastEarthDays / 90797.5)).toFixed(2));
+      yearSince.mercuryAge = parseFloat(((earthDays / 87.97) - (pastEarthDays / 87.97)).toFixed(2));
+      yearSince.venusAge = parseFloat(((earthDays / 224.7) - (pastEarthDays / 224.7)).toFixed(2));
+      yearSince.marsAge = parseFloat(((earthDays / 686.2) - (pastEarthDays / 686.2)).toFixed(2));
+      return yearSince;
+    }
   }
 }
