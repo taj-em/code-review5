@@ -26,7 +26,7 @@ _Will take three numbers, will tell how old you are on a given planet at the mom
 - _Press CTRL + V to paste the copied code into the console_
 - _Before hitting Enter; remove the export tag from the UserInput() constructor on line 1_
 - _Press Enter_
-- _Create a new UserInput() object with "const ages = new UserInput(age1, age2,age3);_
+- _Create a new UserInput() object with "const ages = new UserInput(age1, age2, age3);_
 - _age1 represents your current age, age2 represents an age in the future and age3 represents an age in the past_
 - _call ages.getCurrentAge(); to receive your current age in years throughout the solar system_
 - _call ages.getYearsUntil(); to receive the gap between your selected future age and your current age in years throughout the solar system_
