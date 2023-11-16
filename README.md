@@ -19,13 +19,23 @@ _Will take three numbers, will tell how old you are on a given planet at the mom
 ## Setup/Installation Requirements
 
 - _Clone repo from GitHub_
-- _Run "npm run build" in a terminal upon opening the program_
-- _Copy/Paste into a devtools console to add custom values_
+- _Open calc.js and press CTRL + A to select all_
+- _Press CTRL + C to copy the selected code_
+- _Open Google Chrome_
+- _Open the devtools console by pressing CTRL + SHIFT + I_
+- _Press CTRL + V to paste the copied code into the console_
+- _Before hitting Enter; remove the export tag from the UserInput() constructor on line 1_
+- _Press Enter_
+- _Create a new UserInput() object with "const ages = new UserInput(age1, age2,age3);_
+- _age1 represents your current age, age2 represents an age in the future and age3 represents an age in the past_
+- _call ages.getCurrentAge(); to receive your current age in years throughout the solar system_
+- _call ages.getYearsUntil(); to receive the gap between your selected future age and your current age in years throughout the solar system_
+- _call ages.getYearSince(); to receive the gap between your selected past age and your current age in years throughout the solar system_
 
 
 ## Known Bugs
 
-- _N/A_
+- _Will throw an error if "export" is included when confirming the code within the devtools console_
 
 ## License
 
